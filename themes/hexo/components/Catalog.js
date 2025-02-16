@@ -57,6 +57,8 @@ const Catalog = ({ toc }) => {
       tRef?.current?.scrollTo({ top: 28 * index, behavior: 'smooth' })
     }, throttleMs)
   )
+  // 返回空，不使用目录
+  return <></>
 
   // 无目录就直接返回空
   if (!toc || toc.length < 1) {
