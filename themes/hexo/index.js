@@ -11,7 +11,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { createContext, useContext, useEffect, useRef } from 'react'
 import ArticleAdjacent from './components/ArticleAdjacent'
-// import ArticleCopyright from './components/ArticleCopyright'
+import ArticleCopyright from './components/ArticleCopyright'
 import { ArticleLock } from './components/ArticleLock'
 import ArticleRecommend from './components/ArticleRecommend'
 import BlogPostArchive from './components/BlogPostArchive'
@@ -303,7 +303,7 @@ const LayoutSlug = props => {
               <ShareBar post={post} />
               {post?.type === 'Post' && (
                 <>
-                  // <ArticleCopyright {...props} />
+                  <ArticleCopyright {...props} />
                   <ArticleRecommend {...props} />
                   <ArticleAdjacent {...props} />
                 </>
